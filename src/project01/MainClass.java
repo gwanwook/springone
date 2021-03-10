@@ -15,7 +15,15 @@ public class MainClass {
 			num = input.nextInt();
 			switch(num) {
 			case 1: break;
-			case 2: break;
+			case 2: 
+				System.out.print("아이디 입력: ");
+				m.setId(input.next());
+				System.out.print("이름 입력: ");
+				m.setName(input.next());
+				System.out.print("나이 입력: ");
+				m.setAge(input.nextInt());
+				db.saveMember(m);
+				break;
 			case 3: break;
 			case 4: break;
 			case 5: 
