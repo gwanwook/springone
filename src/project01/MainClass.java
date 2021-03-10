@@ -32,7 +32,16 @@ public class MainClass {
 					System.out.println("수정 중 문제가 발생했습니다");
 				}
 				break;
-			case 4: break;
+			case 4: 
+				System.out.print("삭제 아이디 입력 : ");
+				String id = input.next();
+				int result = db.deleteMember(id);
+				if(result == 1) {
+					System.out.println("성공적으로 삭제했습니다");
+				}else {
+					System.out.println("삭제 중 문제가 발생했습니다");
+				}
+				break;
 			case 5: 
 				System.out.println("수정 중 문제가 발생했습니다");
 				return;

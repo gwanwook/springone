@@ -32,4 +32,20 @@ public class DBClass {
 		}
 		return result;	
 	}
+	
+	public int deleteMember(String id) {
+	//	String sql = "delete from newst where id=?";
+		String sql = "delete from newst where id='"+id+"'";
+		int result = 0;
+		try {
+			Connection con = DriverManager.getConnection(url,this.id,pwd);
+			PreparedStatement ps = con.prepareStatement(sql);
+			//ps.setString(1, id);
+			result = ps.executeUpdate();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
 }
