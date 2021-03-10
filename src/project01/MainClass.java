@@ -6,51 +6,38 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		DBClass db = new DBClass();
-<<<<<<< HEAD
 		Scanner input = new Scanner(System.in);
 		int num;
 		Member m = new Member();
-=======
-		Member m = new Member();
-		Scanner input = new Scanner(System.in);
-		int num;
->>>>>>> 09d316f09a18e57a751b2af7b9977f1e10dcce36
 		while(true) {
-			System.out.println("1. ¸ðµç Á¤º¸ \n2. Ãß°¡ \n3. ¼öÁ¤ \n4. »èÁ¦ \n5. Á¾·á");
+			System.out.println("1. ëª¨ë“  ì •ë³´ \n2. ì¶”ê°€ \n3. ìˆ˜ì • \n4. ì‚­ì œ \n5. ì¢…ë£Œ");
 			System.out.print(">>> ");
 			num = input.nextInt();
 			switch(num) {
 			case 1: break;
 			case 2: break;
-<<<<<<< HEAD
 			case 3:
-				System.out.print("ºñ±³ ¾ÆÀÌµð ÀÔ·Â : ");
+				System.out.print("ë¹„êµ ì•„ì´ë”” ìž…ë ¥ : ");
 				m.setId(input.next());
-				System.out.print("¼öÁ¤ ÀÌ¸§ ÀÔ·Â : ");
+				System.out.print("ìˆ˜ì • ì´ë¦„ ìž…ë ¥ : ");
 				m.setName(input.next());
-				System.out.print("¼öÁ¤ ³ªÀÌ ÀÔ·Â : ");
+				System.out.print("ìˆ˜ì • ë‚˜ì´ ìž…ë ¥ : ");
 				m.setAge(input.nextInt());
-				
+
 				int re = db.modifyMember(m);
 				if(re == 1) {
-					System.out.println("¼º°øÀûÀ¸·Î ¼öÁ¤Çß½À´Ï´Ù");
+					System.out.println("ì„±ê³µì ìœ¼ë¡œ ìˆ˜ì •í–ˆìŠµë‹ˆë‹¤");
 				}else {
-					System.out.println("¼öÁ¤ Áß ¹®Á¦°¡ ¹ß»ýÇß½À´Ï´Ù");
+					System.out.println("ìˆ˜ì • ì¤‘ ë¬¸ì œê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤");
 				}
 				break;
-=======
-			case 3: break;
->>>>>>> 09d316f09a18e57a751b2af7b9977f1e10dcce36
 			case 4: break;
 			case 5: 
-				System.out.println("ÇÁ·Î±×·¥ Á¾·áÇÕ´Ï´Ù");
+				System.out.println("í”„ë¡œê·¸ëž¨ ì¢…ë£Œí•©ë‹ˆë‹¤");
 				return;
 			}
 		}
 	}
+}
 
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 09d316f09a18e57a751b2af7b9977f1e10dcce36
+
