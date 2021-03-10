@@ -4,7 +4,10 @@ public class Member {
 	private String id;
 	private String name;
 	private int age;
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 09d316f09a18e57a751b2af7b9977f1e10dcce36
 	public String getId() {
 		return id;
 	}

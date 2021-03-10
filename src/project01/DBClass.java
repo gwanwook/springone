@@ -1,5 +1,6 @@
 package project01;
 
+<<<<<<< HEAD
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,6 +10,12 @@ public class DBClass {
 	private String url = "jdbc:oracle:thin:@210.108.48.214:1521:xe";
 	private String id = "springone";
 	private String pwd = "1234";
+=======
+public class DBClass {
+	private String url = "jdbc:oracle:thin:@210.108.48.214:1521:xe";
+	private String id = "springone";
+	private int pwd = 1234;
+>>>>>>> 09d316f09a18e57a751b2af7b9977f1e10dcce36
 	
 	public DBClass() {
 		try {
@@ -17,6 +24,7 @@ public class DBClass {
 			e.printStackTrace();
 		}
 	}
+<<<<<<< HEAD
 	public int modifyMember(Member m) {
 		String sql = "update newst1 set name=?, age=? where id=?";
 		int result = 0;
@@ -33,3 +41,6 @@ public class DBClass {
 		return result;	
 	}
 }
+=======
+}
+>>>>>>> 09d316f09a18e57a751b2af7b9977f1e10dcce36
