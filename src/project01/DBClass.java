@@ -3,6 +3,7 @@ package project01;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class DBClass {
 	private String url = "jdbc:oracle:thin:@210.108.48.214:1521:xe";
@@ -35,7 +36,7 @@ public class DBClass {
 	
 	public int deleteMember(String id) {
 	//	String sql = "delete from newst where id=?";
-		String sql = "delete from newst where id='"+id+"'";
+		String sql = "delete from newst1 where id='"+id+"'";
 		int result = 0;
 		try {
 			Connection con = DriverManager.getConnection(url,this.id,pwd);
@@ -47,5 +48,4 @@ public class DBClass {
 		}
 		return result;
 	}
-	
 }
